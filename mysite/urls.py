@@ -20,7 +20,8 @@ from django.urls import path, include
 #URL for each page
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("pymfemi.com/", include("home.urls")),
+    path("www.luvmers.com/", include("home.urls")),
     path('task/', include("task.urls")),
+    path('newtasks/',include("newtask.urls"))
 
 ]

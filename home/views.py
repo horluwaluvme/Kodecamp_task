@@ -3,14 +3,15 @@ from django.shortcuts import render
 # Create your views here.
 #This is a function based view
 
-from django.http import HttpResponse
 
-def home (request):
-    return HttpResponse ("<h1> User Homepage <h1/>")
+def home(request):
+    return render(request, "home/index.html")
 
-def about (request):
-    return HttpResponse ("<h1> About this page <h1/>")
+def about(request):
+    return render(request, "home/about.html")
 
-def contact (request):
-    return HttpResponse ('<h2> Contact <h2/>')
+def contact(request):
+    return render(request, "home/contact.html")
 
+def services(request):
+    return render(request, "home/services.html")
